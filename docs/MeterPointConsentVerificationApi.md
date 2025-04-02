@@ -1,4 +1,4 @@
-# swagger_client.MeterPointConsentVerificationApi
+# python_glowmarkt.MeterPointConsentVerificationApi
 
 All URIs are relative to *https://api.glowmarkt.com/api/v0-1/*
 
@@ -21,39 +21,39 @@ Get meter point consent renewals
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: appKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: devUserToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'# Configure HTTP basic authorization: orgAppKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: userId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['userId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['userId'] = 'Bearer'
 # Configure API key authorization: userToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MeterPointConsentVerificationApi(swagger_client.ApiClient(configuration))
+api_instance = python_glowmarkt.MeterPointConsentVerificationApi(python_glowmarkt.ApiClient(configuration))
 mpxn = 'mpxn_example' # str | meter point number
 
 try:
@@ -68,7 +68,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **mpxn** | **str**| meter point number | 
+ **mpxn** | **str**| meter point number |
 
 ### Return type
 
@@ -94,39 +94,39 @@ Get meter point consent revocations
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: appKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: devUserToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'# Configure HTTP basic authorization: orgAppKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: userId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['userId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['userId'] = 'Bearer'
 # Configure API key authorization: userToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MeterPointConsentVerificationApi(swagger_client.ApiClient(configuration))
+api_instance = python_glowmarkt.MeterPointConsentVerificationApi(python_glowmarkt.ApiClient(configuration))
 mpxn = 'mpxn_example' # str | meter point number
 
 try:
@@ -141,7 +141,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **mpxn** | **str**| meter point number | 
+ **mpxn** | **str**| meter point number |
 
 ### Return type
 
@@ -169,39 +169,39 @@ API to retrieve user's meter points' consent and verification status
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: appKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: devUserToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'# Configure HTTP basic authorization: orgAppKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: userId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['userId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['userId'] = 'Bearer'
 # Configure API key authorization: userToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MeterPointConsentVerificationApi(swagger_client.ApiClient(configuration))
+api_instance = python_glowmarkt.MeterPointConsentVerificationApi(python_glowmarkt.ApiClient(configuration))
 
 try:
     # API to retrieve user's meter points' consent and verification
@@ -240,41 +240,41 @@ A user can renew their consent to access a meter point's data. The consent can b
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: appKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: devUserToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'# Configure HTTP basic authorization: orgAppKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: userId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['userId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['userId'] = 'Bearer'
 # Configure API key authorization: userToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MeterPointConsentVerificationApi(swagger_client.ApiClient(configuration))
+api_instance = python_glowmarkt.MeterPointConsentVerificationApi(python_glowmarkt.ApiClient(configuration))
 mpxn = 'mpxn_example' # str | meter point number
-body = swagger_client.RenewMeterPointConsentReq() # RenewMeterPointConsentReq |  (optional)
+body = python_glowmarkt.RenewMeterPointConsentReq() # RenewMeterPointConsentReq |  (optional)
 
 try:
     # Renew meter point consent
@@ -288,8 +288,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **mpxn** | **str**| meter point number | 
- **body** | [**RenewMeterPointConsentReq**](RenewMeterPointConsentReq.md)|  | [optional] 
+ **mpxn** | **str**| meter point number |
+ **body** | [**RenewMeterPointConsentReq**](RenewMeterPointConsentReq.md)|  | [optional]
 
 ### Return type
 
@@ -317,40 +317,40 @@ A user can renew their consent for a number of meterpoints.  The consent can be 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: appKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: devUserToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'# Configure HTTP basic authorization: orgAppKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: userId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['userId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['userId'] = 'Bearer'
 # Configure API key authorization: userToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MeterPointConsentVerificationApi(swagger_client.ApiClient(configuration))
-body = swagger_client.MeterPointConsentManagementBulkReq() # MeterPointConsentManagementBulkReq |  (optional)
+api_instance = python_glowmarkt.MeterPointConsentVerificationApi(python_glowmarkt.ApiClient(configuration))
+body = python_glowmarkt.MeterPointConsentManagementBulkReq() # MeterPointConsentManagementBulkReq |  (optional)
 
 try:
     # Renew consent for a number of meterpoints
@@ -364,7 +364,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**MeterPointConsentManagementBulkReq**](MeterPointConsentManagementBulkReq.md)|  | [optional] 
+ **body** | [**MeterPointConsentManagementBulkReq**](MeterPointConsentManagementBulkReq.md)|  | [optional]
 
 ### Return type
 
@@ -392,40 +392,40 @@ A user can revoke their consent for a number of meterpoints.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: appKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: devUserToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'# Configure HTTP basic authorization: orgAppKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: userId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['userId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['userId'] = 'Bearer'
 # Configure API key authorization: userToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MeterPointConsentVerificationApi(swagger_client.ApiClient(configuration))
-body = swagger_client.MeterPointConsentManagementBulkReq() # MeterPointConsentManagementBulkReq |  (optional)
+api_instance = python_glowmarkt.MeterPointConsentVerificationApi(python_glowmarkt.ApiClient(configuration))
+body = python_glowmarkt.MeterPointConsentManagementBulkReq() # MeterPointConsentManagementBulkReq |  (optional)
 
 try:
     # Revoke consent for a number of meterpoints
@@ -439,7 +439,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**MeterPointConsentManagementBulkReq**](MeterPointConsentManagementBulkReq.md)|  | [optional] 
+ **body** | [**MeterPointConsentManagementBulkReq**](MeterPointConsentManagementBulkReq.md)|  | [optional]
 
 ### Return type
 
@@ -467,41 +467,41 @@ A user can renew their consent to access a meter point's data. The consent can b
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: appKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: devUserToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'# Configure HTTP basic authorization: orgAppKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: userId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['userId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['userId'] = 'Bearer'
 # Configure API key authorization: userToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MeterPointConsentVerificationApi(swagger_client.ApiClient(configuration))
+api_instance = python_glowmarkt.MeterPointConsentVerificationApi(python_glowmarkt.ApiClient(configuration))
 mpxn = 'mpxn_example' # str | meter point number
-body = swagger_client.RenewMeterPointConsentReq() # RenewMeterPointConsentReq |  (optional)
+body = python_glowmarkt.RenewMeterPointConsentReq() # RenewMeterPointConsentReq |  (optional)
 
 try:
     # Revoke meter point consent
@@ -515,8 +515,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **mpxn** | **str**| meter point number | 
- **body** | [**RenewMeterPointConsentReq**](RenewMeterPointConsentReq.md)|  | [optional] 
+ **mpxn** | **str**| meter point number |
+ **body** | [**RenewMeterPointConsentReq**](RenewMeterPointConsentReq.md)|  | [optional]
 
 ### Return type
 
@@ -532,4 +532,3 @@ Name | Type | Description  | Notes
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

@@ -1,4 +1,4 @@
-# swagger_client.AccountApi
+# python_glowmarkt.AccountApi
 
 All URIs are relative to *https://api.glowmarkt.com/api/v0-1/*
 
@@ -28,25 +28,25 @@ Mobile app token can be added to the user, who will then be able to receive push
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: userToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AccountApi(swagger_client.ApiClient(configuration))
+api_instance = python_glowmarkt.AccountApi(python_glowmarkt.ApiClient(configuration))
 account_id = 'account_id_example' # str | ID of account that is being queried
-body = swagger_client.AddMobileTokenToAccountReq() # AddMobileTokenToAccountReq | The information that is needed to assign a mobile token to an account. (optional)
+body = python_glowmarkt.AddMobileTokenToAccountReq() # AddMobileTokenToAccountReq | The information that is needed to assign a mobile token to an account. (optional)
 
 try:
     # Add mobile app token to a user
@@ -60,8 +60,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **account_id** | **str**| ID of account that is being queried | 
- **body** | [**AddMobileTokenToAccountReq**](AddMobileTokenToAccountReq.md)| The information that is needed to assign a mobile token to an account. | [optional] 
+ **account_id** | **str**| ID of account that is being queried |
+ **body** | [**AddMobileTokenToAccountReq**](AddMobileTokenToAccountReq.md)| The information that is needed to assign a mobile token to an account. | [optional]
 
 ### Return type
 
@@ -89,25 +89,25 @@ Mobile app tokens can be removed from a user.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: userToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AccountApi(swagger_client.ApiClient(configuration))
+api_instance = python_glowmarkt.AccountApi(python_glowmarkt.ApiClient(configuration))
 account_id = 'account_id_example' # str | ID of account that is being queried
-body = swagger_client.RemoveMobileTokenToAccountReq() # RemoveMobileTokenToAccountReq | The information that is needed to remove a mobile token to an account. (optional)
+body = python_glowmarkt.RemoveMobileTokenToAccountReq() # RemoveMobileTokenToAccountReq | The information that is needed to remove a mobile token to an account. (optional)
 
 try:
     # Remove a mobile app token to a user
@@ -121,8 +121,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **account_id** | **str**| ID of account that is being queried | 
- **body** | [**RemoveMobileTokenToAccountReq**](RemoveMobileTokenToAccountReq.md)| The information that is needed to remove a mobile token to an account. | [optional] 
+ **account_id** | **str**| ID of account that is being queried |
+ **body** | [**RemoveMobileTokenToAccountReq**](RemoveMobileTokenToAccountReq.md)| The information that is needed to remove a mobile token to an account. | [optional]
 
 ### Return type
 
@@ -150,30 +150,30 @@ This call should be used when a user is registered via  on the Glow ecosystem. B
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: appKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: devUserToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'# Configure HTTP basic authorization: orgAppKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AccountApi(swagger_client.ApiClient(configuration))
-body = swagger_client.AddAccountReq() # AddAccountReq | The information that is used to add an account to an existing user. (optional)
+api_instance = python_glowmarkt.AccountApi(python_glowmarkt.ApiClient(configuration))
+body = python_glowmarkt.AddAccountReq() # AddAccountReq | The information that is used to add an account to an existing user. (optional)
 
 try:
     # Add an account to an existing user
@@ -187,7 +187,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**AddAccountReq**](AddAccountReq.md)| The information that is used to add an account to an existing user. | [optional] 
+ **body** | [**AddAccountReq**](AddAccountReq.md)| The information that is used to add an account to an existing user. | [optional]
 
 ### Return type
 
@@ -215,24 +215,24 @@ Delete account
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: appKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: devUserToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'# Configure HTTP basic authorization: orgAppKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AccountApi(swagger_client.ApiClient(configuration))
+api_instance = python_glowmarkt.AccountApi(python_glowmarkt.ApiClient(configuration))
 account_id = 'account_id_example' # str | ID of account that is to be deleted
 
 try:
@@ -247,7 +247,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **account_id** | **str**| ID of account that is to be deleted | 
+ **account_id** | **str**| ID of account that is to be deleted |
 
 ### Return type
 
@@ -275,29 +275,29 @@ Returns the status an account.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: appKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: devUserToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'# Configure HTTP basic authorization: orgAppKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AccountApi(swagger_client.ApiClient(configuration))
+api_instance = python_glowmarkt.AccountApi(python_glowmarkt.ApiClient(configuration))
 account_id = 'account_id_example' # str | ID of account that is being queried
 
 try:
@@ -312,7 +312,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **account_id** | **str**| ID of account that is being queried | 
+ **account_id** | **str**| ID of account that is being queried |
 
 ### Return type
 
@@ -340,23 +340,23 @@ Returns the status an account.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: userToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AccountApi(swagger_client.ApiClient(configuration))
+api_instance = python_glowmarkt.AccountApi(python_glowmarkt.ApiClient(configuration))
 
 try:
     # With a given JWT token a user can have their account status verfied. If their account is created under an external directory service, this call will establish whether a user's token to the external service is still valid.
@@ -395,29 +395,29 @@ Returns an account.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: appKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: devUserToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'# Configure HTTP basic authorization: orgAppKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AccountApi(swagger_client.ApiClient(configuration))
+api_instance = python_glowmarkt.AccountApi(python_glowmarkt.ApiClient(configuration))
 account_id = 'account_id_example' # str | ID of account that is being queried
 
 try:
@@ -432,7 +432,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **account_id** | **str**| ID of account that is being queried | 
+ **account_id** | **str**| ID of account that is being queried |
 
 ### Return type
 
@@ -460,29 +460,29 @@ Returns all accounts that belong to an application.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: appKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: devUserToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'# Configure HTTP basic authorization: orgAppKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AccountApi(swagger_client.ApiClient(configuration))
+api_instance = python_glowmarkt.AccountApi(python_glowmarkt.ApiClient(configuration))
 
 try:
     # Find all accounts of an application
@@ -521,31 +521,31 @@ Updates the account s metadata. Elements that can be updated include name. This 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: appKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: devUserToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'# Configure HTTP basic authorization: orgAppKeys
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AccountApi(swagger_client.ApiClient(configuration))
+api_instance = python_glowmarkt.AccountApi(python_glowmarkt.ApiClient(configuration))
 account_id = 'account_id_example' # str | ID of user that needs to be updated
-body = swagger_client.AccountAccountIdBody() # AccountAccountIdBody | The elements of user that can be updated. (optional)
+body = python_glowmarkt.AccountAccountIdBody() # AccountAccountIdBody | The elements of user that can be updated. (optional)
 
 try:
     # Updates the account's metadata.
@@ -559,8 +559,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **account_id** | **str**| ID of user that needs to be updated | 
- **body** | [**AccountAccountIdBody**](AccountAccountIdBody.md)| The elements of user that can be updated. | [optional] 
+ **account_id** | **str**| ID of user that needs to be updated |
+ **body** | [**AccountAccountIdBody**](AccountAccountIdBody.md)| The elements of user that can be updated. | [optional]
 
 ### Return type
 
@@ -588,24 +588,24 @@ A user can update their email
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: userToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AccountApi(swagger_client.ApiClient(configuration))
-body = swagger_client.AccountEmailBody() # AccountEmailBody | The body contains the user's new email. (optional)
+api_instance = python_glowmarkt.AccountApi(python_glowmarkt.ApiClient(configuration))
+body = python_glowmarkt.AccountEmailBody() # AccountEmailBody | The body contains the user's new email. (optional)
 
 try:
     # Change a user's email
@@ -619,7 +619,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**AccountEmailBody**](AccountEmailBody.md)| The body contains the user&#x27;s new email. | [optional] 
+ **body** | [**AccountEmailBody**](AccountEmailBody.md)| The body contains the user&#x27;s new email. | [optional]
 
 ### Return type
 
@@ -647,24 +647,24 @@ A user can update their name
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: userToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AccountApi(swagger_client.ApiClient(configuration))
-body = swagger_client.AccountNameBody() # AccountNameBody | The body contains the user's new email. (optional)
+api_instance = python_glowmarkt.AccountApi(python_glowmarkt.ApiClient(configuration))
+body = python_glowmarkt.AccountNameBody() # AccountNameBody | The body contains the user's new email. (optional)
 
 try:
     # Change a user's name
@@ -678,7 +678,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**AccountNameBody**](AccountNameBody.md)| The body contains the user&#x27;s new email. | [optional] 
+ **body** | [**AccountNameBody**](AccountNameBody.md)| The body contains the user&#x27;s new email. | [optional]
 
 ### Return type
 
@@ -706,24 +706,24 @@ A user can change their passwrod. They would neeed to have knowledge of their pr
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: userToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AccountApi(swagger_client.ApiClient(configuration))
-body = swagger_client.AccountChangepasswordBody() # AccountChangepasswordBody | The information that is needed to change a user's password. (optional)
+api_instance = python_glowmarkt.AccountApi(python_glowmarkt.ApiClient(configuration))
+body = python_glowmarkt.AccountChangepasswordBody() # AccountChangepasswordBody | The information that is needed to change a user's password. (optional)
 
 try:
     # Change a user's password
@@ -737,7 +737,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**AccountChangepasswordBody**](AccountChangepasswordBody.md)| The information that is needed to change a user&#x27;s password. | [optional] 
+ **body** | [**AccountChangepasswordBody**](AccountChangepasswordBody.md)| The information that is needed to change a user&#x27;s password. | [optional]
 
 ### Return type
 
@@ -753,4 +753,3 @@ Name | Type | Description  | Notes
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

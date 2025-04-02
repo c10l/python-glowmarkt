@@ -1,4 +1,4 @@
-# swagger_client.OAuthApi
+# python_glowmarkt.OAuthApi
 
 All URIs are relative to *https://api.glowmarkt.com/api/v0-1/*
 
@@ -19,16 +19,16 @@ The user system supports an OAuth 2.0 Authorization Code Grant. This call genera
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.OAuthApi()
-client_id = true # bool | 
-client_secret = 'client_secret_example' # str | 
-code = 'code_example' # str | 
-grant_type = 'grant_type_example' # str | 
+api_instance = python_glowmarkt.OAuthApi()
+client_id = true # bool |
+client_secret = 'client_secret_example' # str |
+code = 'code_example' # str |
+grant_type = 'grant_type_example' # str |
 
 try:
     # Exchange the Authorization Code for an Access Token.
@@ -42,10 +42,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **client_id** | **bool**|  | 
- **client_secret** | **str**|  | 
- **code** | **str**|  | 
- **grant_type** | **str**|  | 
+ **client_id** | **bool**|  |
+ **client_secret** | **str**|  |
+ **code** | **str**|  |
+ **grant_type** | **str**|  |
 
 ### Return type
 
@@ -73,13 +73,13 @@ The user system supports an OAuth 2.0 Authorization Code Grant. This call authen
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.OAuthApi()
-body = swagger_client.UserNameLoginReq() # UserNameLoginReq | The information that is required to authenticate an account.
+api_instance = python_glowmarkt.OAuthApi()
+body = python_glowmarkt.UserNameLoginReq() # UserNameLoginReq | The information that is required to authenticate an account.
 application_id = 'application_id_example' # str | The ID of the application
 
 try:
@@ -94,8 +94,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**UserNameLoginReq**](UserNameLoginReq.md)| The information that is required to authenticate an account. | 
- **application_id** | **str**| The ID of the application | 
+ **body** | [**UserNameLoginReq**](UserNameLoginReq.md)| The information that is required to authenticate an account. |
+ **application_id** | **str**| The ID of the application |
 
 ### Return type
 
@@ -123,18 +123,18 @@ The user system supports an OAuth 2.0 Authorization Code Grant. This call valida
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: oAccessAuthToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OAuthApi(swagger_client.ApiClient(configuration))
+api_instance = python_glowmarkt.OAuthApi(python_glowmarkt.ApiClient(configuration))
 
 try:
     # Check and validate an Oauth Access token.
@@ -161,4 +161,3 @@ This endpoint does not need any parameter.
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

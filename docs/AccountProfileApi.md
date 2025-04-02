@@ -1,4 +1,4 @@
-# swagger_client.AccountProfileApi
+# python_glowmarkt.AccountProfileApi
 
 All URIs are relative to *https://api.glowmarkt.com/api/v0-1/*
 
@@ -19,24 +19,24 @@ Create an account profile under a given profileName. profileName is a required f
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: userToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AccountProfileApi(swagger_client.ApiClient(configuration))
-body = swagger_client.AccountProfile() # AccountProfile | The information that is used to create a devuser. (optional)
+api_instance = python_glowmarkt.AccountProfileApi(python_glowmarkt.ApiClient(configuration))
+body = python_glowmarkt.AccountProfile() # AccountProfile | The information that is used to create a devuser. (optional)
 
 try:
     # Create an account profile under a given profileName.
@@ -50,7 +50,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**AccountProfile**](AccountProfile.md)| The information that is used to create a devuser. | [optional] 
+ **body** | [**AccountProfile**](AccountProfile.md)| The information that is used to create a devuser. | [optional]
 
 ### Return type
 
@@ -78,23 +78,23 @@ Returns all the profileNames of profiles an account has saved.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: userToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AccountProfileApi(swagger_client.ApiClient(configuration))
+api_instance = python_glowmarkt.AccountProfileApi(python_glowmarkt.ApiClient(configuration))
 
 try:
     # Find all the profiles of an account
@@ -133,23 +133,23 @@ Returns an application's group.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import python_glowmarkt
+from python_glowmarkt.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: applicationId
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['applicationId'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['applicationId'] = 'Bearer'
 # Configure API key authorization: userToken
-configuration = swagger_client.Configuration()
+configuration = python_glowmarkt.Configuration()
 configuration.api_key['token'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AccountProfileApi(swagger_client.ApiClient(configuration))
+api_instance = python_glowmarkt.AccountProfileApi(python_glowmarkt.ApiClient(configuration))
 profile_name = 'profile_name_example' # str | profileName of the system to be retrieved
 
 try:
@@ -164,7 +164,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **profile_name** | **str**| profileName of the system to be retrieved | 
+ **profile_name** | **str**| profileName of the system to be retrieved |
 
 ### Return type
 
@@ -180,4 +180,3 @@ Name | Type | Description  | Notes
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
